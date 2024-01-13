@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Plan Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Financial Plan Calculator</h1>
+        <form id="financialPlanForm">
+            <label for="income">Enter your monthly post-tax income: </label>
+            <input type="number" id="income" required>
+            <button type="submit">Calculate</button>
+        </form>
+        <div id="results" style="display:none;">
+            <p><strong>Expenses:</strong> AUD <span id="expenses"></span></p>
+            <p><strong>Investments:</strong> AUD <span id="investments"></span></p>
+            <p><strong>Emergency Savings:</strong> AUD <span id="emergencySavings"></span></p>
+            <p><strong>Personal Savings:</strong> AUD <span id="personalSavings"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
